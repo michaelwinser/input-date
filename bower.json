@@ -1,0 +1,22 @@
+{
+  "name": "input-date",
+  "version": "0.0.1",
+  "homepage": "https://github.com/michaelwinser/input-date",
+  "description": "Angular directive for input type=date.  Converts the input value to and fromDate.",
+  "main": "input-date.js",
+  "keywords": [
+    "input",
+    "date"
+  ],
+  "authors": [
+    "Michael Winser"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
