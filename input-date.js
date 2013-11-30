@@ -12,17 +12,12 @@ angular.module("input-date").directive("input", function($filter) {
       if (!ngModel || attrs["type"].toLowerCase() !== "date") {
         return;
       }
-      var date_filter = $filter("date")
       var date_formatter = function(value) {
-        return date_filter(value, "yyyy-MM-dd")
-      }
-      
-      var date_parser = function(viewValue) {
-        return new Date(viewValue)
+        return $filter("date")(value, "yyyy-MM-dd")
       }
       
       ngModel.$formatters.unshift(date_formatter)
-      ngModel.$parsers.unshift(date_parser)
+      ngModel.$parsers.unshift(Date)
     }
   }
 })
